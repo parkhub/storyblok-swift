@@ -29,7 +29,7 @@ permissions:
 
 jobs:
   test:
-    name: Run tests
+    name: Run tests on ${{ matrix.platform }}
     runs-on: macOS-latest
     strategy:
       matrix:

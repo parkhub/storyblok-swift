@@ -28,7 +28,7 @@ permissions:
   contents: read
 jobs:
   test:
-    name: Run example tests
+    name: Run tests on ${{ matrix.platform }}
     runs-on: macOS-latest
     strategy:
       matrix:
